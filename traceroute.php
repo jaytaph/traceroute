@@ -41,7 +41,7 @@
             socket_recvfrom ($recv_socket, $buf, 512, 0, $recv_addr, $recv_port);
 
             // Calculate the roundtrip time
-            $roundtrip_time = microtime(true) - $t1;
+            $roundtrip_time = ( microtime(true) – $t1 ) * 1000;
 
             // No decent address found, display a * instead
             if (empty ($recv_addr)) {
